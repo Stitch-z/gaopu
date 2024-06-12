@@ -10,6 +10,7 @@ public class CodeIssues {
     public void unusedTempVariable() {
         int temp = 10;
         System.out.println("Hello, World!");
+
     }
 
     public void unusedParameter(int param1, int param2) {
