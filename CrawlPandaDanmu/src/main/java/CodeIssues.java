@@ -124,7 +124,7 @@ public class CodeIssues {
         stringList.add("banana");
         stringList.add("cherry");
 
-        String[] stringArray = stringList.toArray(new String[0]);
+        String[] stringArray = (String[]) stringList.toArray();
     }
 
     public void nullComparisonInEquals(String str) {
@@ -135,14 +135,7 @@ public class CodeIssues {
 
     public void emptySwitchBlock(int value) {
         switch (value) {
-            case 1:
-                System.out.println("Case 1");
-                break;
-            case 2:
-                System.out.println("Case 2");
-                break;
-            default:
-                break;
+
         }
     }
 
